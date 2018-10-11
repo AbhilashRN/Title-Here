@@ -12,6 +12,7 @@ SPI is advantageous to use as it provides a time averaged value for a specific r
 
 ## Predicting Frost Frequency from Cloud Cover and Minimum Temperature 
 Perennial crops are prone to be damaged from late-spring frost events. Title-Here intends to predict the frost frequency in a month by taking in Cloud Cover, Minimum Temperature and Max-Min Difference as input variables and creating classification labels.
+
 | Frost Frequency  | Label |
 | --------- |--------- |
 | 0 | Perfectly Normal   |
