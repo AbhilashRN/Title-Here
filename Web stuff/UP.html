@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<style>
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+</style>
+<body bgcolor="#E6E6FA">
+<center>
+<h1>Choose your fucntion</h1>
+<p align ="left"><i>There are 3 functions you can choose as mentioned before. Click on either of them to get the prediction you want.</i></p>
+<div class="btn-group">
+  <button>SPI to predict drought</button>
+  <button>Ground Frost</button>
+  <button>Crop Yield</button>
+</div>
+<br> <br> <br> <br>
+ <img src="UP.jpg" width="200" height="250" > 
+</center>
+</body>
+</html>

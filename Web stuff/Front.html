@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body bgcolor="#E6E6FA">
+<center>
+<h2>Drought Prediction</h2>
+<hr>
+<p><i>This is an app to predict whether or not Drought will strike certain area. This is calculated by the amount of precipitaion recieved. Further we can also predict Ground Frost and Crop yield.</i></p>
+<p>We have narrowed this down to 5 states. Choose the state you wish to check below - </p>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">STATE</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Karnataka.html">Karnataka</a>
+    <a href="Maharashtra.html">Maharashtra</a>
+    <a href="UP.html">Uttar Pradesh</a>
+	<a href="Orissa.html">Orissa</a>
+	<a href="Punjab.html">Punjab</a>
+  </div>
+</div>
+</center>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
