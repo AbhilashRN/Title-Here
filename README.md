@@ -2,7 +2,7 @@
 *Probing effects of natural calamities on crops*
 
 
-## Special Precipitation Index to predict Drought and Potential floods
+## Standardized Precipitation Index to predict Drought and Potential floods
 Standardized Precipitation Index (SPI) expresses the actual rainfall as standardized departure from rainfall probability distribution function and, hence, this index has gained importance in recent years as a potential drought indicator permitting comparisons across space and time. Title-here intends to predict droughts and potential floods by computing SPI by averaging data over last 30 years. Computation of SPI requires long term data on precipitation to determine the probability distribution function which is then transformed to normal distribution with mean of zero and standard deviation of one.Computation of SPI with time series data, at a monthly scale, was carried out based on the two parameter gamma distribution function.
 
 <img src="https://github.com/AbhilashRN/Title-Here/blob/master/spi%20index%20table.png" height="180" weight="240">
